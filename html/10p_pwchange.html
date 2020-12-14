@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>kelli</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link href="../resources/css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="../resources/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../resources/js/ui.js"></script>
+</head>
+<body>
+
+	<div class="popup_container">
+		<div class="popup pass">
+			<h1>비밀번호 변경</h1>
+			<div class="form">
+				<ul>
+					<li>
+						<input type="password" placeholder="새 비밀번호" />
+						<button class="btn_pwView" type="button">비밀번호보기</button>
+						<button class="btn_pwHide" type="button" style="display:none">비밀번호숨김</button>
+						<p class="error type">영문, 숫자, 특수문자 중 2가지 이상,  6자리 이상</p>
+					</li>
+					<li>
+						<input type="password" placeholder="새 비밀번호 확인" />
+						<button class="btn_pwView" type="button">비밀번호보기</button>
+						<button class="btn_pwHide" type="button" style="display:none">비밀번호숨김</button>
+					</li>
+				</ul>
+				<p class="btn_g">
+					<button class="btnM2" type="button">닫기</button>
+					<button class="btnM1" type="button">저장</button>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+	<!--
+		//샘플 스크립트
+		 $('.btn_pwView').on('click',function(){
+			 if ($(this).hasClass('btn_pwView') == true)
+			 {
+				 $(this).removeClass('btn_pwView');
+				 $(this).addClass('btn_pwHide');
+				 $(this).parent().find('input').attr('type',"text");
+			 }else{
+				 $(this).removeClass('btn_pwHide');
+				 $(this).addClass('btn_pwView');
+				 $(this).parent().find('input').attr('type',"password");
+			 }	
+		 });
+	//-->
+	</script>
+
+</body>
+</html>

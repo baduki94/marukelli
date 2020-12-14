@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>kelli</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link href="../resources/css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="../resources/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../resources/js/ui.js"></script>
+</head>
+<body>
+	
+	<header>		
+		<div class="header">
+			<h1>kelli</h1>
+			<aside>
+				<a href="#" class="btn_admin">학원 관리자 체험</a>
+				<ul>
+					<li><a href="#">로그인</a></li>
+				</ul>
+			</aside>
+		</div>
+	</header>
+
+	<section class="member_ui">
+		<h1 class="h1_tit">마이페이지</h1>
+		<h2 class="h2_tit">회원정보</h2>
+
+		<div class="tbl_row type">
+			<table>
+				<caption>회원정보</caption>
+				<colgroup>
+					<col width="165px" />
+					<col width="318px" />
+					<col width="165px" />
+					<col width="" />
+				</colgroup>
+				<tbody>
+				<tr>
+					<th scope="row">업종</th>
+					<td>학원</td>
+					<th scope="row">상호</th>
+					<td>대성학원</td>
+				</tr>
+				<tr>
+					<th scope="row">대표자명</th>
+					<td>홍길동</td>
+					<th scope="row">사업자등록번호</th>
+					<td>123-12-12345</td>
+				</tr>
+				<tr>
+					<th scope="row">사업장주소</th>
+					<td colspan="3">서울 강남구 테헤란로 4길  63 (역삼동) </td>
+				</tr>
+				<tr>
+					<th scope="row">전화번호</th>
+					<td>02-7548-9938</td>
+					<th scope="row">이메일주소</th>
+					<td>desung@kelli.co.kr</td>
+				</tr>
+				<tr>
+					<th scope="row">담당자명</th>
+					<td colspan="3">한습관</td>
+				</tr>
+				<tr>
+					<th scope="row">아이디</th>
+					<td>kildong</td>
+					<th scope="row">비밀번호</th>
+					<td><a href="#" class="point1">변경</a></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="btn_block2">
+			<div>
+				<button class="btnS3 siz1" type="button">회원탈퇴</button>
+			</div>
+			<button class="btnS1 siz2" type="button">회원정보 수정</button>
+		</div>
+	</section>
+
+	<footer>	
+		<div class="footer">
+			<ul class="f_menu">
+				<li><a href="#">켈리소개</a></li>
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#">개인정보 취급방침</a></li>
+				<li><a href="#">공지사항 취급방침</a></li>
+			</ul>
+			<ul class="sns_ui">
+				<li><a href="#" class="sns_instar">인스타 그램</a></li>
+				<li><a href="#" class="sns_face">페이스북</a></li>
+				<li><a href="#" class="sns_blog">블로그</a></li>
+				<li><a href="#" class="sns_ytb">유투브</a></li>
+			</ul>
+			<div class="addr">
+				<p><span>마루앤켈리 주식회사</span><span>대표이사 : 김현정</span><span>서울특별시 강동구 양재대로 1400 이송빌딩 4F</span></p>
+				<p><span>사업자등록번호 :  123-45-67890</span><span>통신판매업신고번호 제0000-서울강동-0000호</span><span>사업자정보확인</span><span><a href="mailto:service@kelli.co.kr">service@kelli.co.kr</a></span></p>
+			</div>
+			<div class="copy">
+				©2020 MARU & KELLI Co.,Ltd.  All rights reserved.
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+	<!--
+		//샘플 스크립트
+		 $('.btn_pwView').on('click',function(){
+			 if ($(this).hasClass('btn_pwView') == true)
+			 {
+				 $(this).removeClass('btn_pwView');
+				 $(this).addClass('btn_pwHide');
+				 $(this).parent().find('input').attr('type',"text");
+			 }else{
+				 $(this).removeClass('btn_pwHide');
+				 $(this).addClass('btn_pwView');
+				 $(this).parent().find('input').attr('type',"password");
+			 }	
+		 });
+		 $('input[type=tel]').click(function(){
+			$('.btnD1').removeAttr('disabled');
+			$('.del').show();
+		 });
+		 $('.del').click(function(){
+			$('input[type=tel]').val('');
+		 });
+	//-->
+	</script>
+
+</body>
+</html>
